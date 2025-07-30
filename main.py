@@ -2,17 +2,14 @@
 
 # Import the Quality Tools from Python Quality Assurance Module
 from pyFOQA import Quality
-import os
 
 # Set the base directory to QAR JSON Data
-dir = 'B737'
-ac = '683'
+dir = '683'
 # dataset = '683200404051447.json'
 dataset = None
 
 # Create the Quality object
-path = os.path.join(dir, ac)
-q1 = Quality(path, dataset)
+q1 = Quality(dir, dataset)
 
 # %%
 
